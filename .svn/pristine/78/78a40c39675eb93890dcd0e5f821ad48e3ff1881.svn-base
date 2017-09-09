@@ -1,0 +1,15 @@
+.site-demo-upload, .site-demo-upload img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.site-demo-upload {
+    background: #e2e2e2;
+	margin-left: 130px;
+	display: inline-block;
+}
+.site-demo-upbar {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-left: 50px;
+}

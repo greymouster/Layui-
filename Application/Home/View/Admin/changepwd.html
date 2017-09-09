@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<meta name="renderer" content="webkit">	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">	
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<meta name="apple-mobile-web-app-capable" content="yes">	
+	<meta name="format-detection" content="telephone=no">	
+	<link rel="stylesheet" type="text/css" href="/static/common/layui/css/layui.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/static/common/bootstrap/css/bootstrap.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/static/common/global.css" media="all">
+</head>
+<body>
+<div class="layui-tab-title" style="background:#f2f2f2;z-index:9999;width:100%;line-height:40px;position:fixed;top:6px;border-top:solid 2px #1AA094;">
+	<i class="iconfont icon-diannao1" style="margin-left:15px;"></i>
+	<span class="layui-breadcrumb" style="color:#fff;font-size:18px;">
+	  <a href="{:U('Index/main')}">后台首页</a>
+	  <a><cite class='change-text'>修改密码</cite></a>
+	</span>
+</div>
+<section class="layui-larry-box" style="margin-top:20px;">
+    
+	
+	 
+	
+	<div class="larry-personal" style="margin-top:20px;">
+	
+	   <div class="layui-tab layui-tab-brief">
+		<ul class="layui-tab-title">
+		   <li class="site-demo-active layui-this">修改密码</li>
+		</ul>
+		<div class="layui-tab-content">
+			<div class='layui-tab-item layui-show'>
+			     <div class="row" style="margin:0 0 20px">
+					<div class="col-md-10" style="color:#FF6B5F;font-size:16px;margin-top:10px;">此密码是RTX后台通用密码，修改后登录其他平台将是修改后的密码</div>
+					<div class="col-md-2" style="padding-right:0"><a href="{:U('Index/main')}" class="layui-btn" style="float:right">返回</a></div>
+				 </div>
+				 <fieldset class="layui-elem-field" style="padding-top:20px;font-size:16px;">
+				     <div class="larry-personal-body clearfix changepwd">
+						<form class="layui-form col-lg-4" id="changeForm" method="post" action="">
+						 	<div class="layui-form-item">
+								<label class="layui-form-label" for="username">用户名</label>
+								<div class="layui-input-block">  
+								  	<input type="text" name="username" id="username"  autocomplete="off"  class="layui-input layui-disabled" value="{$username}" disabled="disabled" >
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label" for="password">旧密码</label>
+								<div class="layui-input-block">  
+								  	<input type="password" name="oldpassword" id="password"  autocomplete="off"  class="layui-input" value="" placeholder="请输入旧密码">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label" for="newpassword">新密码</label>
+								<div class="layui-input-block">  
+								  	<input type="password" name="newpassword" id="newpassword"  autocomplete="off"  class="layui-input" value="" placeholder="请输入新密码">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label" for="repassword">确认密码</label>
+								<div class="layui-input-block">  
+								  	<input type="password" name="repassword" id="repassword"  autocomplete="off"  class="layui-input" value="" placeholder="请输入确认新密码">
+								</div>
+							</div>
+							<div class="layui-form-item change-submit">
+								<div class="layui-input-block">
+									<a class="layui-btn change-passwd" data-url="{:U('Admin/changepwd')}">立即提交</a>
+									<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+								</div>
+							</div>
+						</form>
+					</div>
+			    </fieldset>
+			</div>
+        </div>
+	   </div>        
+	</div>
+</section>
+<script type="text/javascript" src="/static/common/layui/layui.js"></script>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/jquery.form.js"></script>
+<script type="text/javascript">
+	layui.use(['jquery','form','element'],function(){
+		var $ = layui.jquery;
+		    window.layer = layui.layer,
+		    element = layui.element(),
+		    form = layui.form();
+		$(".change-passwd").click(function(){
+			var url = $(this).data('url');
+			$("#changeForm").ajaxSubmit({
+				url:url,
+				type:'post',
+				success:function(data){
+					if(data.status>0) {
+						layer.msg(data.msg,{icon:6});
+						setTimeout(function(){
+							parent.window.location.href = data.back_url;
+						},1500);
+					}else{
+						layer.msg(data.msg,{icon:5});
+					}
+				}
+			});
+		});   
+	});
+</script>
+</body>
+</html>

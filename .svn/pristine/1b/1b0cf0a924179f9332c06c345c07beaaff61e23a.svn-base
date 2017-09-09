@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>个人信息</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" type="text/css" href="/static/common/layui/css/layui.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/static/common/bootstrap/css/bootstrap.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/static/common/global.css" media="all">
+  <link rel="stylesheet" href="/static/common/cxcalendar/css/cxcalendar.css">
+</head>
+
+<body>
+  <div class="layui-tab-title" style="background:#f2f2f2;z-index:9999;width:100%;line-height:40px;position:fixed;top:6px;border-top:solid 2px #1AA094;">
+    <i class="iconfont icon-diannao1" style="margin-left:15px;"></i>
+    <span class="layui-breadcrumb" style="color:#fff;font-size:18px;">
+		  <a href="javascript:;">运营</a>
+		   <a href="{:U('Special/index')}">营销单页管理</a>
+		  <a><cite class='change-text'>专题管理</cite></a>
+	</span>
+  </div>
+  <section class="layui-larry-box" style="margin-top:20px;">
+    <div class="larry-personal">
+      <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+           <if condition="I('get.flag') eq 1">
+			   <li class="site-demo-active ">专题管理</li>
+			   <li class="site-demo-active layui-this ">回收站</li>
+		   <else />
+			   <li class="site-demo-active layui-this">专题管理</li>
+			   <li class="site-demo-active">回收站</li>
+		   </if>
+        </ul>
+        <div class="layui-tab-content">
+          <div class='layui-tab-item  <if condition="I('get.flag') neq 1">layui-show</if>'>
+            <fieldset class="layui-elem-field">
+              <div class="layui-field-box">
+                <form class="layui-form"  action="" >  
+				  <div class="layui-form-item ">
+				    <label class="layui-form-label" style="width:100px;">申请国家:</label>
+				    <div class="layui-input-block">
+				      <input type="checkbox" title="全选" lay-skin="primary"   lay-filter="Choose-all"> 
+				      <volist name="country" id="vo"> 
+				            <input type="checkbox"  lay-skin="primary" <if condition="strpos(','.$country_name.',',','.$vo['country_name'].',')!==false">checked</if> name="country_name[{$vo.country_id}]" {$checked} value="{$vo.country_name}" title="{$vo.country_name}">
+				      </volist>
+				    </div>
+				  </div>
+                  <div class="layui-form-item">
+				    <label class="layui-form-label " style="width:100px;">留学阶段:</label>
+				    <div class="layui-input-block">
+				      <input type="radio" name="current_state" <if condition="I('get.current_state') eq '准备留学' && I('get.flag') neq 1">checked</if> value="准备留学" title="准备留学">
+				      <input type="radio" name="current_state" <if condition="I('get.current_state') eq '留学中' && I('get.flag') neq 1">checked</if> value="留学中" title="留学中">
+				    </div>
+				  </div>  
+                  <div class="layui-form-item">
+                    <label class="layui-form-label" style="width:100px;">按日期查询:</label>
+                    <div class="layui-input-inline">
+                      <select name="time">
+				        <option value="">--时间类型--</option>
+				        <option value="1" <if condition="I('time') eq 1 && I('get.flag') neq 1">selected</if>>创建时间</option>
+				        <option value="2" <if condition="I('time') eq 2 && I('get.flag') neq 1">selected</if>>更新时间</option>
+				      </select>
+                    </div>
+                    <div class="layui-input-inline">
+                      <input type="text" name="start_time" id="start_time" value="<?php if(I('get.start_time') && I('get.flag') != 1) echo I('get.start_time')?>" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid">到</div>
+                    <div class="layui-input-inline">
+                      <input type="text" name="end_time" id="end_time" value="<?php if(I('get.end_time') && I('get.flag') != 1) echo I('get.end_time')?>" autocomplete="off" class="layui-input">
+                    </div>
+                    <label class="layui-form-label" style="width:100px;">专题标题:</label>
+                    <div class="layui-input-inline">
+                       <input type="text" name="title" value="<?php if(I('get.title') && I('get.flag') != 1) echo I('get.title'); ?>"  placeholder="请输入专题标题查询"  class="layui-input" >
+                    </div>
+                    <div class="layui-input-inline">
+                      <button class="layui-btn layui-btn-normal" >查询</button>
+                    </div>
+                  </div> 
+                  
+                </form>
+              </div>
+            </fieldset>
+   
+            <div class="layui-form">
+              <div class="layui-input-inline">
+                <input type="checkbox" class="select-all" lay-filter="allChoose" lay-skin="primary" title="全选">
+              </div>
+              <div class="layui-input-inline">
+                <a href="{:U('Special/add')}" class="layui-btn layui-btn-normal">添加</a>
+              </div>
+              <div class="layui-input-inline">
+                <button data-url="{:U('Special/change_state')}" class="layui-btn layui-btn-normal  change-all-status">批量删除</button>
+              </div>
+            </div>
+            <table class="layui-table table-hover table1" lay-even="" lay-skin="nob">
+              <thead>
+                <tr>
+                  <th>选择</th>
+                  <th>ID</th>
+                  <th>标题</th>
+                  <th>申请国家</th>
+                  <th>毕业阶段</th>
+                  <th>浏览次数</th>
+                  <th>点击次数</th>
+                  <th>创建者</th>
+                  <th>创建时间</th>
+                  <th>更新时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+               <foreach name="data" item="vo">
+                <tr>
+                  <td>
+                    <div class="layui-form"><input type="checkbox" value="{$vo.id}" lay-skin="primary"></div>
+                  </td>
+                  <td>{$vo.id}</td>
+                  <td><a href="{:U('Special/edit')}?id={$vo.id}" style="color:#34A8FF;">{$vo.title|default="--"}</a></td> 
+                  <td>{$vo.country_name|default="--"}</td>
+                  <td>{$vo.current_state|default="--"}</td>
+                  <td>{$vo.read_num}</td>
+                  <td>{$vo.click}</td>
+                  <td>{$vo.author}</td>
+	              <td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
+	              <td>{$vo.update_time|date="Y-m-d H:i:s",###}</td>
+                  <td>
+                     <a class="layui-btn" href="{:U('Special/edit')}?id={$vo.id}" ><i class="layui-icon">&#xe642;</i>编辑</a>
+                     <!-- <button class="layui-btn layui-btn-normal" ><i class="layui-icon">&#xe609;</i>发布</button> -->
+                     <button class="layui-btn layui-btn-danger change-state" data-id="{$vo.id}"  data-url="{:U('Special/change_state')}"><i class="layui-icon">&#xe640;</i>删除</button>
+                  </td>
+                </tr>
+                </foreach>
+              </tbody>
+            </table>
+            <div class=" clearfix">
+                  <div style="text-align:center;">{$page}</div>
+            </div>
+          </div>
+          
+          <div class='layui-tab-item  <if condition="I('get.flag') eq 1">layui-show</if>'>
+          
+           <fieldset class="layui-elem-field">
+              <div class="layui-field-box">
+                <form class="layui-form"  action="" >  
+                  <input type="hidden" value="1" name="flag">
+				  <div class="layui-form-item ">
+				    <label class="layui-form-label" style="width:100px;">申请国家:</label>
+				    <div class="layui-input-block">
+				      <input type="checkbox" title="全选" lay-skin="primary"   lay-filter="Choose-all"> 
+				      <volist name="country" id="vo"> 
+				            <?php 
+				                if(strpos(','.$countryId.',',','.$vo['country_id'].',') !== false && I('get.flag') !=1 ){
+                                      $checked = "checked";
+                                }else{
+                                      $checked = '';
+                                }
+				            ?>
+				            <input type="checkbox"  lay-skin="primary"  name="country_id[{$vo.country_id}]" {$checked} value="{$vo.country_id}" title="{$vo.country_name}">
+				      </volist>
+				    </div>
+				  </div>
+                  <div class="layui-form-item">
+				    <label class="layui-form-label " style="width:100px;">留学阶段:</label>
+				    <div class="layui-input-block">
+				      <input type="radio" name="current_state" <if condition="I('get.current_state') eq '准备留学' && I('get.flag') eq 1">checked</if> value="准备留学" title="准备留学">
+				      <input type="radio" name="current_state" <if condition="I('get.current_state') eq '留学中' && I('get.flag') eq 1">checked</if> value="留学中" title="留学中">
+				    </div>
+				  </div>  
+                  <div class="layui-form-item">
+                    <label class="layui-form-label" style="width:100px;">按日期查询:</label>
+                    <div class="layui-input-inline">
+                      <select name="time">
+				        <option value="">--时间类型--</option>
+				        <option value="1" <if condition="I('time') eq 1 && I('get.flag') eq 1">selected</if>>创建时间</option>
+				        <option value="3" <if condition="I('time') eq 3 && I('get.flag') eq 1">selected</if>>删除时间</option>
+				      </select>
+                    </div>
+                    <div class="layui-input-inline">
+                      <input type="text" name="start_time" id="start_time" value="<?php if(I('get.start_time') && I('get.flag') == 1 ) echo I('get.start_time')?>" autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid">到</div>
+                    <div class="layui-input-inline">
+                      <input type="text" name="end_time" id="end_time" value="<?php if(I('get.end_time') && I('get.flag') == 1 ) echo I('get.end_time')?>" autocomplete="off" class="layui-input">
+                    </div>
+                    <label class="layui-form-label" style="width:100px;">专题标题:</label>
+                    <div class="layui-input-inline">
+                       <input type="text" name="title" value="<?php if(I('get.title') && I('get.flag') == 1 ) echo I('get.title'); ?>"  placeholder="请输入专题标题查询"  class="layui-input" >
+                    </div>
+                    <div class="layui-input-inline">
+                      <button class="layui-btn layui-btn-normal" >查询</button>
+                    </div>
+                  </div> 
+                  
+                </form>
+              </div>
+            </fieldset>
+   
+            <div class="layui-form">
+              <div class="layui-input-inline">
+                <input type="checkbox" class="select-all" lay-filter="allChoose" lay-skin="primary" title="全选">
+              </div>
+              <div class="layui-input-inline">
+                <button data-url="{:U('Special/delAllSpecial')}" class="layui-btn layui-btn-normal del-special"><i class="layui-icon">&#xe640;</i>清空回收站</button>
+              </div>
+            </div>
+            <table class="layui-table table-hover table1" lay-even="" lay-skin="nob">
+              <thead>
+                <tr>
+                  <th>选择</th>
+                  <th>ID</th>
+                  <th>标题</th>
+                  <th>申请国家</th>
+                  <th>毕业阶段</th>
+                  <th>浏览次数</th>
+                  <th>点击次数</th>
+                  <th>创建者</th>
+                  <th>创建时间</th>
+                  <th>删除时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+               <foreach name="data1" item="vo">
+                <tr>
+                  <td>
+                    <div class="layui-form"><input type="checkbox" value="{$vo.id}" lay-skin="primary"></div>
+                  </td>
+                  <td>{$vo.id}</td>
+                  <td><a href="{:U('Special/edit')}?id={$vo.id}" style="color:#34A8FF;">{$vo.title|default="--"}</a></td> 
+                  <td>{$vo.country_name|default="--"}</td>
+                  <td>{$vo.current_state|default="--"}</td>
+                  <td>{$vo.read_num}</td>
+                  <td>{$vo.click}</td>
+                  <td>{$vo.author}</td>
+	              <td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
+	              <td>{$vo.del_time|date="Y-m-d H:i:s",###}</td>
+                  <td>
+                    
+                     <button data-url="{:U('Special/change_state')}" data-id="{$vo.id}" class="layui-btn layui-btn-normal return-special" ><i class="layui-icon">&#xe609;</i>还原</button>
+   
+                  </td>
+                </tr>
+                </foreach>
+              </tbody>
+            </table>
+            <div class=" clearfix">
+                  <div style="text-align:center;">{$page1}</div>
+            </div>
+          
+          
+          
+          
+          </div>
+          
+          
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="/static/common/layui/layui.js"></script>
+  <script type="text/javascript" src="/static/js/jquery-1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/js/special/index.js"></script>
+  <script type="text/javascript" src="/static/common/cxcalendar/js/jquery.cxcalendar.min.js"></script>
+</body>
+<script>
+
+/*显示日历*/
+$('#start_time,#end_time').cxCalendar();
+// 获取焦点清空input的值
+$('#start_time,#end_time').focus(function(){
+	$(this).val('');
+});
+</script>
+</html>

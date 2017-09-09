@@ -1,0 +1,189 @@
+<?php
+// +----------------------------------------------------------------------
+// | Tiandao [ 北京天道教育集团 ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2017 http://tiandaoedu.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: run.yuan@tiandaoedu.com 
+// +----------------------------------------------------------------------
+
+namespace Home\Controller;
+
+/**
+ * 咨询控制器
+ */
+class AddressController extends BaseController {
+    public function index(){
+		
+		$paging = I('paging',0);
+		$list_rows = I('list_rows',C('LIST_ROWS') > 0 ? C('LIST_ROWS') : 20);	
+		$sort_field = I('sort_field','');
+		$sort_rule = I('sort_rule','');
+
+		$sort = "add_time desc";
+		if ($sort_field) {
+		    $sort = $sort_field." ".$sort_rule;
+		    
+		} 
+		 
+		// 问题标题
+		$branch_name = I('branch_name',''); 
+		if(!empty($branch_name)) {
+		    $where['branch_name'] = array('like', "%$branch_name%");					 
+		}		
+		
+		$addressModel = D('Address');
+		/*获取总条数*/
+		$total = $addressModel->get_count($where);
+
+		// 获取未认证用户的数量
+		$page = new \Think\Page($total, $list_rows);
+		$page->setConfig('first', '首页'); 
+		$page->setConfig('prev', '上一页');
+		$page->setConfig('next', '下一页');
+		$page->setConfig('last','尾页');
+		$_page = $this->bootstrap_page_style($page->show());
+		
+		//查询列表
+		$address = $addressModel->get_list($where, $page->nowPage, $list_rows, $sort);
+	
+		$this->assign('_page', $_page);		//底部分页
+		$this->assign('_total',$total);		//列表总数量		
+		$this->assign('address_list',$address);  	
+		$this->display();
+         
+    }
+
+    /**
+     * Thinkphp默认分页样式转Bootstrap分页样式
+     * @param string $page_html tp默认输出的分页html代码
+     * @return string 新的分页html代码
+     */
+    function bootstrap_page_style($page_html){
+    	if ($page_html) {
+    		$page_show = str_replace('<div>','<nav><ul class="pagination" >',$page_html);
+    		$page_show = str_replace('</div>','</ul></nav>',$page_show);
+    		$page_show = str_replace('<span class="current">','<li class="active"><a>',$page_show);
+    		$page_show = str_replace('</span>','</a></li>',$page_show);
+    		$page_show = str_replace(array('<a class="num"','<a class="prev"','<a class="next"','<a class="end"','<a class="first"'),'<li><a',$page_show);
+    		$page_show = str_replace('</a>','</a></li>',$page_show);
+    	}
+    	return $page_show;
+    }
+	
+    public function add(){
+		$this->display();         
+    }
+    public function save(){
+ 
+	
+		$branch_name = I('post.branch_name',''); //公司名称  
+		$address = I('post.address',''); //公司地址 
+		$telephone = I('post.telephone',''); // 咨询电话		
+
+		$bus = I('post.bus',''); // 公交线路
+		$subway = I('post.subway',''); // 地铁线路	
+		$drive = I('post.drive',''); // 自驾线路			
+ 		$weixin = I('post.weixin',''); //微博 
+ 		$map = I('post.map',''); //公司坐标 
+
+ 			
+		$data['add_time'] = time();			
+		$data['branch_name'] = $branch_name;  
+		$data['address'] = $address;  
+		$data['telephone'] = $telephone;  
+		$data['bus'] = $bus;  
+		$data['subway'] = $subway;  
+		$data['drive'] = $drive;  
+
+		$data['weixin'] = $weixin;  
+
+		$data['map'] = $map;  
+
+
+		$addressModel = D('Address');		
+		if( $consultid = $addressModel->add_address($data) ) {
+			$res['consultid'] = $consultid;					
+			$this->ajaxReturn(array('status'=>1,'msg'=>'公司数据添加成功！','back_url'=>U('Address/index')));
+		}
+		$this->ajaxReturn(array('status'=>0,'msg'=>'公司数据添加失败！'));		
+
+    }
+
+    public function edit(){
+		$id = I('id',''); //问题id
+		
+		$addressModel = D('Consult');
+		$consult = $addressModel->get_infoById($id);
+
+		$country = $addressModel->get_country();
+		$cate = $addressModel->get_cate();
+		$edu = $addressModel->get_edu();	
+		
+		$this->assign('consult',$consult);
+		$this->assign('country_list',$country);
+		$this->assign('cate_list',$cate);
+		$this->assign('edu_list',$edu);		
+		$this->display();
+         
+    }	
+
+    public function edit_save(){
+ 
+		$question_id = I('post.question_id',''); //问题标题  	
+		$question_title = I('post.question_title',''); //问题标题  
+		$question = I('post.question',''); //咨询问题 
+		$question_answer = I('post.question_answer',''); // 问题答案		
+		$country_id = I('post.country_id',''); // 国家id
+		$edu_id = I('post.edu_id',''); // 阶段id
+		$cate_id = I('post.cate_id',''); // 类目id
+		$user_name = I('post.user_name',''); // 用户名称
+		$user_id = I('post.user_id',''); // 用户名称		
+		//$file = I('post.file',''); // 
+		
+		$data['question_title'] = $question_title;
+		$data['question'] = $question;   
+		$data['question_answer'] = $question_answer;   
+		$data['country_id'] = $country_id;   
+		$data['edu_id'] = $edu_id;   
+		$data['cate_id'] = $cate_id;   
+		$data['user_name'] = $user_name;   	
+		$data['uid'] = $user_id;   	  
+
+		$addressModel = D('Consult');		
+		if( $res = $addressModel->edit_consult($data, $question_id) ) {
+			 				
+			$this->ajaxReturn(array('status'=>1,'msg'=>'问答数据修改成功！','back_url'=>U('Consult/index')));
+		}
+		$this->ajaxReturn(array('status'=>0,'msg'=>'问答数据修改失败！'));		
+
+    }
+
+    public function get_user(){
+		
+		$nickname = I('user_name',''); //关键词
+		$memberModel = D('Member');	
+
+		$where['a.source'] = array('eq', '5');
+		$where['a.nickname'] = array('like', "%$nickname%");	
+		$res=$memberModel->getKeyMember($where);
+		foreach($res as $key=>$val){
+			$res[$key]['label']=$res[$key]['nickname'];
+		}
+ 
+        echo json_encode($res);		
+	}	
+	
+    public function status_change(){
+    	$id = I('id',0); //问答id
+    	$status = I('status',0); //要修改的状态		
+		$data['status'] = $status;
+		$addressModel = D('Consult');	
+		
+		if( $addressModel->where(array('id'=>$id))->save($data) ) {
+			 				
+			$this->ajaxReturn(array('status'=>1,'msg'=>'操作成功！'));
+		}
+		$this->ajaxReturn(array('status'=>0,'msg'=>'操作失败！'));			
+	}	
+}

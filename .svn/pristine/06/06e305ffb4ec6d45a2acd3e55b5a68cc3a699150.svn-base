@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>添加_公司信息</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" type="text/css" href="/static/common/layui/css/layui.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/static/common/bootstrap/css/bootstrap.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/static/common/global.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/static/css/add.css" media="all">
+	<link rel="stylesheet" href="/static/css/jquery-ui.min.css">
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/jquery-ui.min.js"></script> 
+ 
+</head>
+
+
+<body>
+	<div class="layui-tab-title" style="background:#f2f2f2;z-index:9999;width:100%;line-height:40px;position:fixed;top:6px;border-top:solid 2px #1AA094;">
+		<i class="iconfont icon-diannao1" style="margin-left:15px;"></i>
+		<span class="layui-breadcrumb" style="color:#fff;font-size:18px;">
+		  <a href="javascript:;">运营</a>
+		  <a href="{:U('Address/index')}">地址管理</a>
+		</span>
+	</div>
+	<section class="layui-larry-box" style="margin-top:20px;">
+		<div class="larry-personal">
+			<div class="layui-tab layui-tab-brief">
+				<ul class="layui-tab-title">
+					<li class="layui-this site-demo-active">地址管理</li>
+ 
+				</ul>
+				<div class="layui-tab-content">
+					<div class="layui-tab-item layui-show">
+						<!-- 地址管理-->
+						<div class="row" style="margin:0 0 20px">
+							<div class="col-md-10" style="font-size:27px">添加分公司信息</div>
+							<div class="col-md-2" style="padding-right:0"><a class="layui-btn" onclick="javascript:history.go(-1);" style="float:right">返回</a></div>
+						</div>
+						<div class="layui-tab-item  layui-show">
+							<fieldset class="layui-elem-field" style="padding-top:20px;font-size:16px;">
+								<div style="width:1000px;margin-left:50px">
+									<form class="layui-form" action="">
+										<div class="layui-form-item">
+											<label class="layui-form-label" for="title"><span style="color:red;">*</span>公司名称</label>
+											<div class="layui-input-block">
+												<input id="branch_name" type="text" name="branch_name" required lay-verify="required" placeholder="请输入公司名称" autocomplete="off" class="layui-input">
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label" for="title"><span style="color:red;">*</span>公司地址</label>
+											<div class="layui-input-block">
+												<input id="address" type="text" name="address" required lay-verify="required" placeholder="请输入公司地址" autocomplete="off" class="layui-input">
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label" for="title"><span style="color:red;">*</span>咨询电话</label>
+											<div class="layui-input-block">
+												<input id="telephone" type="text" name="telephone" required lay-verify="required" placeholder="请输入公司咨询电话" autocomplete="off" class="layui-input">
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label" for="title"><span style="color:red;">*</span>营业时间</label>
+											<div class="layui-input-block">
+												<input id="opening" type="text" name="opening" required lay-verify="required" placeholder="请输入公司营业时间" autocomplete="off" class="layui-input">
+											</div>
+										</div>
+									  <div class="layui-form-item layui-form-text">
+										<label class="layui-form-label"><span style="color:red;">*</span>公交线路</label>
+										<div class="layui-input-block">
+										  <textarea placeholder="请输入公司公交线路" name="bus"  required lay-verify="required"  class="layui-textarea"></textarea>
+										</div>
+									  </div>										
+										<div class="layui-form-item">
+											<label class="layui-form-label" for="title"><span style="color:red;">*</span>地铁路线</label>
+											<div class="layui-input-block">
+												<input id="subway" type="text" name="subway" required lay-verify="required" placeholder="请输入公司地铁路线" autocomplete="off" class="layui-input">
+											</div>
+										</div>
+										<div class="layui-form-item">
+											<label class="layui-form-label" for="title"><span style="color:red;">*</span>自驾停车</label>
+											<div class="layui-input-block">
+												<input id="drive" type="text" name="drive" required lay-verify="required" placeholder="请输入公司自驾停车线路" autocomplete="off" class="layui-input">
+											</div>
+										</div>										
+
+										<div class="layui-form-item">
+											<label class="layui-form-label" for="title"><span style="color:red;">*</span>微信</label>
+											<div class="layui-input-block">
+												<input id="weixin" type="text" name="weixin" required lay-verify="required" placeholder="请输入公司微信" autocomplete="off" class="layui-input">
+											</div>
+										</div>
+									
+										<div class="layui-form-item">
+											<label class="layui-form-label" for="title"><span style="color:red;">*</span>公司坐标</label>
+											<div class="layui-input-block">
+												<input id="map" type="text" name="map" required lay-verify="required" placeholder="请输入公司坐标" autocomplete="off" class="layui-input">
+											</div>
+										</div>
+
+										
+										<div class="layui-form-item">
+											<div class="layui-input-block">
+												<button class="layui-btn" lay-submit lay-filter="save">保存</button>
+												<button type="reset" class="layui-btn  layui-btn-primary">重置</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</fieldset>
+						</div>
+					</div>
+ 
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="/static/common/layui/layui.js"></script>
+	<script type="text/javascript" src="/static/js/address/add.js"></script>
+ 
+</body>
+
+</html>

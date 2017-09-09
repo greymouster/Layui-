@@ -1,0 +1,453 @@
+[ 2017-08-23T14:19:16+08:00 ] 127.0.0.1 /Special/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014529s ]
+NOTIC: [8] Undefined index: _string G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Controller\SpecialController.class.php 第 35 行.
+SQL: SHOW COLUMNS FROM `td_special` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `td_special` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [2] implode(): Invalid arguments passed G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Controller\SpecialController.class.php 第 98 行.
+SQL: SELECT * FROM td_special a WHERE `status` = 1 ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `td_special` WHERE `status` = '-1' LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined variable: page_show G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Common\function.php 第 73 行.
+SQL: SELECT * FROM td_special a WHERE `status` = '-1' ORDER BY id DESC LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `td_country` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `td_country`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: checked G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 47 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+NOTIC: [8] Undefined variable: countryId G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\d421352dfdc946c93d83cd205baf0330.php 第 164 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.039578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.039643s ]
+
+[ 2017-08-23T14:19:19+08:00 ] 127.0.0.1 /Special/edit.html?id=38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `td_special` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `td_special` WHERE `id` = '38' LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `td_country` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `td_country`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+NOTIC: [8] Undefined index: country_id G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\fceb2b2af443975b09295dd92181f766.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000629s ]
+
+[ 2017-08-23T14:19:22+08:00 ] 127.0.0.1 /Offer/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `td_caption` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `td_article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `td_article`  INNER JOIN td_article_category on td_article.category_id=td_article_category.category_id and td_article.system_id = td_article_category.system_id  WHERE (  td_article_category.is_delete = 0  and td_article.is_delete = 0 and td_article.status = 4 ) LIMIT 1   [ RunTime:0.0227s ]
+NOTIC: [2] Missing argument 4 for Think\Page::__construct(), called in G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Controller\OfferController.class.php on line 264 and defined G:\XAMPP\htdocs\TiandaoStudy\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+SQL: SELECT td_article.*,td_article_category.category_name,td_article_category.directory FROM `td_article`  INNER JOIN td_article_category on td_article.category_id=td_article_category.category_id and td_article.system_id = td_article_category.system_id  WHERE (  td_article_category.is_delete = 0  and td_article.is_delete = 0 and td_article.status = 4 ) ORDER BY td_article.id desc LIMIT 0,10   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `td_article_author` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `td_article_author` WHERE (  1  )  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Use of undefined constant more - assumed 'more' G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\47078e95d52aa861241e57448682434c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2017-08-23T14:19:24+08:00 ] 127.0.0.1 /Home/Offer/edit/id/535176
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `td_article` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `td_article` WHERE `id` = 535176 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `td_offer` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `td_offer` WHERE `article_id` = 735175 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `td_article_property_mapping` [ RunTime:0.0014s ]
+SQL: SELECT `property_id` FROM `td_article_property_mapping` WHERE `article_id` = 535176 AND `table_name` = 'tb_Success'  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: offer_list G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\f0075d14c3db943a17d35fa35656d6c9.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001494s ]
+
+[ 2017-08-23T14:19:25+08:00 ] 127.0.0.1 /Uploads/article/20170717/596c54ca9d118.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-08-23T14:19:32+08:00 ] 127.0.0.1 /Offer/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000515s ]
+SQL: SHOW COLUMNS FROM `td_caption` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `td_article` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `td_article`  INNER JOIN td_article_category on td_article.category_id=td_article_category.category_id and td_article.system_id = td_article_category.system_id  WHERE (  td_article_category.is_delete = 0  and td_article.is_delete = 0 and td_article.status = 4 ) LIMIT 1   [ RunTime:0.0186s ]
+NOTIC: [2] Missing argument 4 for Think\Page::__construct(), called in G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Controller\OfferController.class.php on line 264 and defined G:\XAMPP\htdocs\TiandaoStudy\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+SQL: SELECT td_article.*,td_article_category.category_name,td_article_category.directory FROM `td_article`  INNER JOIN td_article_category on td_article.category_id=td_article_category.category_id and td_article.system_id = td_article_category.system_id  WHERE (  td_article_category.is_delete = 0  and td_article.is_delete = 0 and td_article.status = 4 ) ORDER BY td_article.id desc LIMIT 0,10   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `td_article_author` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `td_article_author` WHERE (  1  )  [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Use of undefined constant more - assumed 'more' G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\47078e95d52aa861241e57448682434c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2017-08-23T14:19:36+08:00 ] 127.0.0.1 /Home/Offer/edit/id/537756
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `td_article` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `td_article` WHERE `id` = 537756 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `td_offer` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `td_offer` WHERE `article_id` = 737755 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `td_article_property_mapping` [ RunTime:0.0013s ]
+SQL: SELECT `property_id` FROM `td_article_property_mapping` WHERE `article_id` = 537756 AND `table_name` = 'tb_Success'  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: rmStr G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Controller\OfferController.class.php 第 587 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined variable: offer_list G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\f0075d14c3db943a17d35fa35656d6c9.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2017-08-23T14:19:37+08:00 ] 127.0.0.1 /Uploads/article/20170809/598aa52f83db5.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2017-08-23T14:21:36+08:00 ] 127.0.0.1 /Offer/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `td_caption` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `td_article` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `td_article`  INNER JOIN td_article_category on td_article.category_id=td_article_category.category_id and td_article.system_id = td_article_category.system_id  WHERE (  td_article_category.is_delete = 0  and td_article.is_delete = 0 and td_article.status = 4 ) LIMIT 1   [ RunTime:0.0210s ]
+NOTIC: [2] Missing argument 4 for Think\Page::__construct(), called in G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Controller\OfferController.class.php on line 264 and defined G:\XAMPP\htdocs\TiandaoStudy\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+SQL: SELECT td_article.*,td_article_category.category_name,td_article_category.directory FROM `td_article`  INNER JOIN td_article_category on td_article.category_id=td_article_category.category_id and td_article.system_id = td_article_category.system_id  WHERE (  td_article_category.is_delete = 0  and td_article.is_delete = 0 and td_article.status = 4 ) ORDER BY td_article.id desc LIMIT 0,10   [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `td_article_author` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `td_article_author` WHERE (  1  )  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Use of undefined constant more - assumed 'more' G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\47078e95d52aa861241e57448682434c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
+
+[ 2017-08-23T14:21:59+08:00 ] 127.0.0.1 /Offer/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `td_caption` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `td_article` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `td_article`  INNER JOIN td_article_category on td_article.category_id=td_article_category.category_id and td_article.system_id = td_article_category.system_id  WHERE (  td_article_category.is_delete = 0  and td_article.is_delete = 0 and td_article.status = 4 ) LIMIT 1   [ RunTime:0.0191s ]
+NOTIC: [2] Missing argument 4 for Think\Page::__construct(), called in G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Controller\OfferController.class.php on line 264 and defined G:\XAMPP\htdocs\TiandaoStudy\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+SQL: SELECT td_article.*,td_article_category.category_name,td_article_category.directory FROM `td_article`  INNER JOIN td_article_category on td_article.category_id=td_article_category.category_id and td_article.system_id = td_article_category.system_id  WHERE (  td_article_category.is_delete = 0  and td_article.is_delete = 0 and td_article.status = 4 ) ORDER BY td_article.id desc LIMIT 0,10   [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `td_article_author` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `td_article_author` WHERE (  1  )  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Use of undefined constant more - assumed 'more' G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\47078e95d52aa861241e57448682434c.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-08-23T14:25:44+08:00 ] 127.0.0.1 /Home/Offer/edit/id/535950
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `td_article` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `td_article` WHERE `id` = 535950 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `td_offer` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `td_offer` WHERE `article_id` = 735949 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `td_article_property_mapping` [ RunTime:0.0014s ]
+SQL: SELECT `property_id` FROM `td_article_property_mapping` WHERE `article_id` = 535950 AND `table_name` = 'tb_Success'  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: rmStr G:\XAMPP\htdocs\TiandaoStudy\Application\Home\Controller\OfferController.class.php 第 587 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: offer_list G:\XAMPP\htdocs\TiandaoStudy\Application\Runtime\Cache\Home\f0075d14c3db943a17d35fa35656d6c9.php 第 178 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2017-08-23T14:25:44+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f3dbc2926.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+
+[ 2017-08-23T14:25:44+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f421d8427.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000325s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f3eb54d92.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000969s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f42a574c8.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003831s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f4337dab7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f43c4aae6.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f3f44089d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003464s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f498bc314.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/597801a69254d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001689s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f4dc73e3c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f4051f54b.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f4eaa1a54.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f4f381889.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f4fcc961e.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f50f8008f.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f52211de9.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f517c352a.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f529dda5d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f44835200.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f540e7337.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f54992e14.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f5068c643.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f554a288d.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f5339b08c.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+
+[ 2017-08-23T14:25:45+08:00 ] 127.0.0.1 /Uploads/article/20170726/5977f419cdfab.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+
